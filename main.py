@@ -139,7 +139,7 @@ async def search_with_grover(request: GroverSearchRequest):
     total_qubits = math.ceil(math.log2(request.list_size_N))
     N_sim_space = 2 ** total_qubits
     optimal_iterations = round((math.pi / 4) * math.sqrt(N_sim_space))
-    max_iterations_to_run = optimal_iterations + 3
+    max_iterations_to_run = optimal_iterations
 
     try:
         evolution_data = run_grover_simulation(
