@@ -1,0 +1,10 @@
+# --- Server API ---
+fastapi
+uvicorn[standard]
+
+# --- Quantum Computing ---
+qiskit
+qiskit-aer
+
+# --- Matematică & Utilitare ---
+numpy
